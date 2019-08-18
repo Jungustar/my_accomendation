@@ -1,0 +1,14 @@
+<h1><%= @accomendation.title %></h1>
+<p><%= @accomendation.description %></p>
+<p><%= @accomendation.rent %></p>
+
+<%= link_to "Edit", edit_accomendation_path(@accomendation) %>
+<%= link_to "Delete", accomendation_path(@accomendation), method: :delete %>
+<h2>Review</h2>
+<%= link_to "Add review", new_accomendation_review_path(@accomendation) %>
+<% @accomendation.reviews.each do |review| %>
+  <ul>
+    <li><%= review.content %></li>
+  </ul>
+<% end %>
+f

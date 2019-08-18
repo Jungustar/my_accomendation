@@ -1,0 +1,7 @@
+{
+  "name": "my_accomendation",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

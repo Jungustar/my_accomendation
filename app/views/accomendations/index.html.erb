@@ -1,0 +1,13 @@
+<h1>Flinder</h1>
+<%= link_to "Add new accomendation", new_accomendation_path %>
+
+<% @accomendations.each do |accomendation| %>
+  <ul>
+    <li>
+      <%= accomendation.title %>
+      <%= link_to "Details", accomendation_path(accomendation) %>
+      <%= link_to "Delete", accomendation_path(accomendation), method: :delete %>
+      <%= link_to "Edit", edit_accomendation_path(accomendation) %>
+    </li>
+  </ul>
+<% end %>

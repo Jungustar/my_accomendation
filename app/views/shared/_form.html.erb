@@ -1,0 +1,6 @@
+<%= simple_form_for @accomendation do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :rent, as: :integer %>
+  <%= f.submit "Save" %>
+<% end %>
