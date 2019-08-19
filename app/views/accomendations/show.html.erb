@@ -2,10 +2,10 @@
 <p><%= @accomendation.description %></p>
 <p><%= @accomendation.rent %></p>
 
-<%= link_to "Edit", edit_accomendation_path(@accomendation) %>
+<%= link_to "Edit", edit_accomendation_path(@accomendation), class: "btn btn-primary" %>
 <%= link_to "Delete", accomendation_path(@accomendation), method: :delete %>
 <h2>Review</h2>
-<%= link_to "Add review", new_accomendation_review_path(@accomendation) %>
+<%= link_to "Add review", new_accomendation_review_path(@accomendation) , class: "btn btn-primary" %>
 <% @accomendation.reviews.each do |review| %>
   <ul>
     <li><%= review.content %></li>

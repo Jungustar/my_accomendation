@@ -1,11 +1,10 @@
-<h1>Accomendations#new</h1>
-<p>Find me in app/views/accomendations/new.html.erb</p>
+<div class="container w-50 ">
 
+  <%= simple_form_for @accomendation do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :rent, as: :integer %>
+    <%= f.submit "Save", class: "btn btn-secondary" %>
+  <% end %>
 
-<%= simple_form_for @accomendation do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :rent, as: :integer %>
-  <%= f.submit "Save" %>
-<% end %>
-
+</div>
